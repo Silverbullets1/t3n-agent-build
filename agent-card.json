@@ -1,0 +1,28 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "DevilX",
+  "description": "Enterprise agent for automated data processing, security research, and multi-platform bounty earning. Built with T3N ADK.",
+  "services": [
+    {
+      "name": "A2A",
+      "endpoint": "https://cn-api.sg.testnet.t3n.terminal3.io/api/agent-card/did:t3n:65fbd5823e89b5333049d77ffd4ea9db5b807d97",
+      "version": "0.3.0"
+    },
+    {
+      "name": "MCP",
+      "endpoint": "https://cn-api.sg.testnet.t3n.terminal3.io/api/agent-card/did:t3n:65fbd5823e89b5333049d77ffd4ea9db5b807d97",
+      "version": "2025-06-18"
+    },
+    {
+      "name": "DID",
+      "endpoint": "did:t3n:65fbd5823e89b5333049d77ffd4ea9db5b807d97",
+      "version": "v1"
+    }
+  ],
+  "x402Support": false,
+  "active": true,
+  "registrations": [],
+  "supportedTrust": [
+    "tee-attestation"
+  ]
+}
