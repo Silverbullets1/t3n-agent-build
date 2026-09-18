@@ -7,6 +7,7 @@ import {
   eth_get_address,
   metamask_sign,
   createEthAuthInput,
+  fetchTrustedManifest,
   getContractVersion,
   getNodeUrl,
 } from "@terminal3/t3n-sdk";
@@ -20,7 +21,7 @@ async function main() {
     const address: any = eth_get_address(T3N_API_KEY);
 
     const t3n: any = new T3nClient({
-      trustAnchor: { unsafe_trust_server: true }, // platform bug workaround
+      trustAnchor: await fetchTrustedManifest("testnet"),
       wasmComponent,
       handlers: { EthSign: metamask_sign(address, undefined, T3N_API_KEY) },
     });

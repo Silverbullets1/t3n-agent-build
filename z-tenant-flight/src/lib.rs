@@ -38,7 +38,7 @@
 
 extern crate alloc;
 
-pub const CONTRACT_VERSION: &str = "0.4.1";
+pub const CONTRACT_VERSION: &str = "1.0.0";
 
 wit_bindgen::generate!({
     world: "tenant-flight",
@@ -89,7 +89,7 @@ mod tests {
     }
 
     #[test]
-    fn contract_version_is_v0_4_0() {
-        assert_eq!(CONTRACT_VERSION, "0.4.1");
+    fn contract_version_is_v1_0_0() {
+        assert_eq!(CONTRACT_VERSION, "1.0.0");
     }
 }

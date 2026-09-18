@@ -19,11 +19,11 @@
 package z:tenant-flight@0.4.0;
 
 world tenant-flight {
-    import host:tenant/tenant-context@1.2.0;
-    import host:interfaces/logging@2.2.0;
-    import host:interfaces/kv-store@2.2.0;
-    import host:interfaces/http@2.2.0;                    // search (no PII)
-    import host:interfaces/http-with-placeholders@2.2.0;  // booking (PII via placeholders)
+    import host:tenant/tenant-context@1.0.0;
+    import host:interfaces/logging@2.1.0;
+    import host:interfaces/kv-store@2.1.0;
+    import host:interfaces/http@2.1.0;                    // search (no PII)
+    import host:interfaces/http-with-placeholders@2.1.0;  // booking (PII via placeholders)
 
     export contracts;
 }
